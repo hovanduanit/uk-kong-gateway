@@ -1,0 +1,11 @@
+# a very minimal declarative config file
+_format_version: "2.1"
+_transform: true
+
+services:
+  - name: real-time-service
+    url: http://host.docker.internal:3000/
+    routes:
+      - name: real-time-routes
+        paths:
+          - /real-time
