@@ -4,13 +4,13 @@ _transform: true
 
 services:
   - name: real-time-service
-    url: http://host.docker.internal:3000/
+    url: http://host.docker.internal:6002/
     routes:
       - name: real-time-routes
         paths:
           - /real-time
   - name: account-service
-    url: http://host.docker.internal:8080/
+    url: http://host.docker.internal:6001/
     routes:
       - name: account-routes
         paths:
